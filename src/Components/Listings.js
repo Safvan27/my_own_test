@@ -7,7 +7,7 @@ import DoneIcon from '@material-ui/icons/Done';
 import ClearIcon from '@material-ui/icons/Clear';
 //import history from './History';
 
-//import Postfacebook from './Post-facebook';
+import Postfacebook from './Post-facebook';
 
 import "./Listing.css";
 // import{
@@ -49,7 +49,7 @@ function Listing() {
       <td>3/5</td>
       <td>Yes</td>
       <td><DoneIcon color="primary"/></td>
-      <td><button type="button" className="btn btn-primary">Update</button></td>
+      <td><button type="button" className="btn btn-primary" onClick = "Postfacebook()" >Update</button></td>
 
     </tr>
     <tr>
