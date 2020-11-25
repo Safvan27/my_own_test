@@ -1,14 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
-  );
+import "./App.css";
+import Sidebar from "./Components/Sidebar";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+//import Listing from "./Components/Listings";
+import Header from './Components/Header';
+import Facebook from './Components/Facebook';
+import { Component } from "react";
+//import Postfacebook from './Components/Post-facebook';
+class App extends Component{
+  render(){
+    return(
+      <div className="App">
+        <div className="App">
+          <div className="header">
+            <div className="facebook">
+              <Facebook/>
+            </div>
+            <Header/>
+          </div>
+          <Sidebar/>
+        </div>
+      </div>
+    )
+  }
 }
+
 
 export default App;
