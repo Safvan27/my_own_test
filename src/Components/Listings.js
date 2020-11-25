@@ -16,6 +16,10 @@ import "./Listing.css";
 //   Route,Link
 // } from 'react-router-dom';
 
+function Post(){
+  return <Postfacebook/>
+}
+
 function Listing() {
     return (
 
@@ -49,7 +53,7 @@ function Listing() {
       <td>3/5</td>
       <td>Yes</td>
       <td><DoneIcon color="primary"/></td>
-      <td><button type="button" className="btn btn-primary" onClick = "Postfacebook()" >Update</button></td>
+      <td><button type="button" className="btn btn-primary" onClick = {Post} >Update</button></td>
 
     </tr>
     <tr>

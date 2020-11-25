@@ -25,6 +25,7 @@ function Postfacebook() {
     });
   }, []);
 
+  
   // Logs out the current Facebook user
   const logOutOfFB = React.useCallback(() => {
     window.FB.logout(() => {

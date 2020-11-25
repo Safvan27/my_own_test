@@ -28,11 +28,9 @@ function Sidebar() {
                         <div id="icon">{val.icon}</div><div id="title">{val.title}</div>
                         <Router>
                             <Link to={val.link}></Link>
-                        <Switch>
+                            <Switch>
                             <Route path="/Listings"><Listings/></Route>
-                            
-                           
-                        </Switch>
+                         </Switch>
                         </Router>
                         
 
